@@ -1,0 +1,382 @@
+13:12:32.731 karate.env system property was: null 
+13:12:42.524 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 1042
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/CreateParticipant
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:iqu="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CreateParticipant>
+         <!--Optional:-->
+         <tem:newParticipantData>
+            <!--Optional:-->
+            <iqu:ParticipantEmail>testuser@ncs.com</iqu:ParticipantEmail>
+            <!--Optional:-->
+            <iqu:ParticipantFullName>Test User Full Name</iqu:ParticipantFullName>
+            <!--Optional:-->
+            <iqu:ParticipantMobile>7788994455</iqu:ParticipantMobile>
+            <!--Optional:-->
+            <iqu:ParticipantNRIC>S2234567G</iqu:ParticipantNRIC>
+            <!--Optional:-->
+            <iqu:SupporterMobile>8899665544</iqu:SupporterMobile>
+            <!--Optional:-->
+            <iqu:SupporterName>Test Supporter Name</iqu:SupporterName>
+         </tem:newParticipantData>
+      </tem:CreateParticipant>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:45.647 response time in milliseconds: 3093
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 496
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:45 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><CreateParticipantResponse xmlns="http://tempuri.org/"><CreateParticipantResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ReferenceId>e478a269-7c7d-49c4-b48e-d297a2ffc13b</a:ReferenceId><a:StatusCode>200</a:StatusCode><a:StatusMessage>Success.</a:StatusMessage></CreateParticipantResult></CreateParticipantResponse></s:Body></s:Envelope>
+
+13:12:46.086 karate.env system property was: null 
+13:12:46.187 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 910
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/CreateParticipant
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:iqu="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CreateParticipant>
+         <!--Optional:-->
+         <tem:newParticipantData>
+            <!--Optional:-->
+            <iqu:ParticipantEmail>testuser@ncs.com</iqu:ParticipantEmail>
+            <!--Optional:-->
+            <iqu:ParticipantFullName>Test User Full Name</iqu:ParticipantFullName>
+            <!--Optional:-->
+            <iqu:ParticipantMobile/>
+            <!--Optional:-->
+            <iqu:ParticipantNRIC/>
+            <!--Optional:-->
+            <iqu:SupporterMobile/>
+            <!--Optional:-->
+            <iqu:SupporterName/>
+         </tem:newParticipantData>
+      </tem:CreateParticipant>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:46.618 response time in milliseconds: 428
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 485
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:46 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><CreateParticipantResponse xmlns="http://tempuri.org/"><CreateParticipantResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ReferenceId/><a:StatusCode>501</a:StatusCode><a:StatusMessage>Validation Error. Mandatory fields not provided.</a:StatusMessage></CreateParticipantResult></CreateParticipantResponse></s:Body></s:Envelope>
+
+13:12:46.632 status code was: 200, expected: 501, response time: 428, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><CreateParticipantResponse xmlns="http://tempuri.org/"><CreateParticipantResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ReferenceId/><a:StatusCode>501</a:StatusCode><a:StatusMessage>Validation Error. Mandatory fields not provided.</a:StatusMessage></CreateParticipantResult></CreateParticipantResponse></s:Body></s:Envelope>
+13:12:46.967 karate.env system property was: null 
+13:12:47.169 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 1046
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:iqu="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:UpdateParticipant>
+         <!--Optional:-->
+         <tem:participantData>
+            <!--Optional:-->
+            <iqu:ParticipantEmail>updated_email@hotmail.com</iqu:ParticipantEmail>
+            <!--Optional:-->
+            <iqu:ParticipantFullName>Updated</iqu:ParticipantFullName>
+            <!--Optional:-->
+            <iqu:ParticipantMobile>99999999</iqu:ParticipantMobile>
+            <!--Optional:-->
+            <iqu:ReferenceId>d9d72c72-3fc0-45f4-9c74-14be8ecea897</iqu:ReferenceId>
+            <!--Optional:-->
+            <iqu:SupporterMobile>88888888</iqu:SupporterMobile>
+            <!--Optional:-->
+            <iqu:SupporterName>Updated Supporter</iqu:SupporterName>
+         </tem:participantData>
+      </tem:UpdateParticipant>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:47.382 response time in milliseconds: 208
+1 < 500
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 730
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:46 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode xmlns:a="http://schemas.microsoft.com/net/2005/12/windowscommunicationfoundation/dispatcher">a:InternalServiceFault</faultcode><faultstring xml:lang="en-US">The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the &lt;serviceDebug&gt; configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.</faultstring></s:Fault></s:Body></s:Envelope>
+
+13:12:47.399 status code was: 500, expected: 200, response time: 208, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode xmlns:a="http://schemas.microsoft.com/net/2005/12/windowscommunicationfoundation/dispatcher">a:InternalServiceFault</faultcode><faultstring xml:lang="en-US">The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the &lt;serviceDebug&gt; configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.</faultstring></s:Fault></s:Body></s:Envelope>
+13:12:47.472 karate.env system property was: null 
+13:12:47.501 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 1023
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:iqu="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:UpdateParticipant>
+         <!--Optional:-->
+         <tem:participantData>
+            <!--Optional:-->
+            <iqu:ParticipantEmail>updated_email@hotmail.com</iqu:ParticipantEmail>
+            <!--Optional:-->
+            <iqu:ParticipantFullName>Updated</iqu:ParticipantFullName>
+            <!--Optional:-->
+            <iqu:ParticipantMobile>99999999</iqu:ParticipantMobile>
+            <!--Optional:-->
+            <iqu:ReferenceId>d9d72c72-3fc0-45f4-9c74-14be8ecea897</iqu:ReferenceId>
+            <!--Optional:-->
+            <iqu:SupporterMobile>?</iqu:SupporterMobile>
+            <!--Optional:-->
+            <iqu:SupporterName>?</iqu:SupporterName>
+         </tem:participantData>
+      </tem:UpdateParticipant>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:47.691 response time in milliseconds: 186
+1 < 500
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 730
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:47 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode xmlns:a="http://schemas.microsoft.com/net/2005/12/windowscommunicationfoundation/dispatcher">a:InternalServiceFault</faultcode><faultstring xml:lang="en-US">The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the &lt;serviceDebug&gt; configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.</faultstring></s:Fault></s:Body></s:Envelope>
+
+13:12:47.705 status code was: 500, expected: 501, response time: 186, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode xmlns:a="http://schemas.microsoft.com/net/2005/12/windowscommunicationfoundation/dispatcher">a:InternalServiceFault</faultcode><faultstring xml:lang="en-US">The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the &lt;serviceDebug&gt; configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.</faultstring></s:Fault></s:Body></s:Envelope>
+13:12:47.782 karate.env system property was: null 
+13:12:47.813 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 530
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetParticipants>
+         <!--Optional:-->
+         <tem:lstReferenceId>
+            <!--Zero or more repetitions:-->
+            <arr:string>d9d72c72-3fc0-45f4-9c74-14be8ecea897</arr:string>
+         </tem:lstReferenceId>
+      </tem:GetParticipants>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:47.942 response time in milliseconds: 126
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 1094
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:47 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>200</a:StatusCode><a:StatusMessage>Success.</a:StatusMessage><a:lstParticipantData><a:ParticipantForGet><a:CreatedBy>SYSTEM</a:CreatedBy><a:CreatedDate>2018-12-31T11:28:30.22</a:CreatedDate><a:LastModifiedBy>SYSTEM</a:LastModifiedBy><a:LastModifiedDatetime>2018-12-31T13:11:02.34</a:LastModifiedDatetime><a:ParticipantEmail>updated_email@hotmail.com</a:ParticipantEmail><a:ParticipantFullName>Updated</a:ParticipantFullName><a:ParticipantMobile>99999999</a:ParticipantMobile><a:ParticipantNRIC>S1234567G</a:ParticipantNRIC><a:ReferenceId>d9d72c72-3fc0-45f4-9c74-14be8ecea897</a:ReferenceId><a:SupporterMobile>88888888</a:SupporterMobile><a:SupporterName>Updated Supporter</a:SupporterName></a:ParticipantForGet></a:lstParticipantData></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+
+13:12:48.257 karate.env system property was: null 
+13:12:48.315 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 482
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetParticipants>
+         <!--Optional:-->
+         <tem:lstReferenceId>
+            <!--Zero or more repetitions:-->
+            <arr:string/>
+         </tem:lstReferenceId>
+      </tem:GetParticipants>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:48.494 response time in milliseconds: 176
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 472
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:47 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage> Invalid referenceIds:;</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+
+13:12:48.511 status code was: 200, expected: 501, response time: 176, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage> Invalid referenceIds:;</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+13:12:48.650 karate.env system property was: null 
+13:12:48.720 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 530
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetParticipants>
+         <!--Optional:-->
+         <tem:lstReferenceId>
+            <!--Zero or more repetitions:-->
+            <arr:string>d9d72c72-3fc0-45f4-9999-14be8ecea897</arr:string>
+         </tem:lstReferenceId>
+      </tem:GetParticipants>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:48.894 response time in milliseconds: 171
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 474
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:49 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage>No matching record found.</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+
+13:12:48.926 status code was: 200, expected: 502, response time: 171, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage>No matching record found.</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+13:12:49.294 karate.env system property was: null 
+13:12:49.393 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 573
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetParticipants>
+         <!--Optional:-->
+         <tem:lstReferenceId>
+            <!--Zero or more repetitions:-->
+            <arr:string>d9d72c72-3fc0-45f4-9c74-14be8ecea897, d9d72c72-3fc0-9999-9999-14be8ecea897,aaaa</arr:string>
+         </tem:lstReferenceId>
+      </tem:GetParticipants>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:49.566 response time in milliseconds: 169
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 551
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:49 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage> Invalid referenceIds:d9d72c72-3fc0-45f4-9c74-14be8ecea897, d9d72c72-3fc0-9999-9999-14be8ecea897,aaaa;</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+
+13:12:49.598 status code was: 200, expected: 502, response time: 169, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage> Invalid referenceIds:d9d72c72-3fc0-45f4-9c74-14be8ecea897, d9d72c72-3fc0-9999-9999-14be8ecea897,aaaa;</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+13:12:49.775 karate.env system property was: null 
+13:12:49.841 request:
+1 > POST https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 568
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: internet-cprms-uat.hpb.gov.sg:5556
+1 > SOAPAction: http://tempuri.org/IParticipantService/GetParticipants
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/9)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetParticipants>
+         <!--Optional:-->
+         <tem:lstReferenceId>
+            <!--Zero or more repetitions:-->
+            <arr:string>d9d72c72-3fc0-45f4-9c74-14be8ecea897, d9d72c72-3fc0-9999-9999-14be8ecea897</arr:string>
+         </tem:lstReferenceId>
+      </tem:GetParticipants>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+13:12:50.011 response time in milliseconds: 166
+1 < 200
+1 < Cache-Control: [private, no-store, no-cache]
+1 < Connection: Keep-Alive
+1 < Content-Length: 546
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 31 Dec 2018 05:12:50 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: 'nosniff'
+1 < X-XSS-Protection: 1; mode=block
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage> Invalid referenceIds:d9d72c72-3fc0-45f4-9c74-14be8ecea897, d9d72c72-3fc0-9999-9999-14be8ecea897;</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+
+13:12:50.044 status code was: 200, expected: 201, response time: 166, url: https://internet-cprms-uat.hpb.gov.sg:5556/IQuitParticipantService/ParticipantService.svc, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetParticipantsResponse xmlns="http://tempuri.org/"><GetParticipantsResult xmlns:a="http://schemas.datacontract.org/2004/07/IQuitParticipantService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StatusCode>502</a:StatusCode><a:StatusMessage> Invalid referenceIds:d9d72c72-3fc0-45f4-9c74-14be8ecea897, d9d72c72-3fc0-9999-9999-14be8ecea897;</a:StatusMessage><a:lstParticipantData i:nil="true"/></GetParticipantsResult></GetParticipantsResponse></s:Body></s:Envelope>
+nvelope>
+
