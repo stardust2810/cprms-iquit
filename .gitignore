@@ -34,3 +34,5 @@ karate-config.js
 auth.js
 *.pfx
 *.store
+.idea/workspace.xml
+*.log
